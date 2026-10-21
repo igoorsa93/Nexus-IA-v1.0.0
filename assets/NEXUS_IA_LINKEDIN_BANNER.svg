@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050507;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0a0c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#050507;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d97a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2aa89d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="1584" height="396" fill="url(#bgGradient)" />
+
+  <!-- Linhas de grade sutis -->
+  <rect x="0" y="0" width="1584" height="1" fill="#1a1a1f" opacity="0.3" />
+  <rect x="0" y="395" width="1584" height="1" fill="#1a1a1f" opacity="0.3" />
+
+  <!-- Elementos decorativos geométricos -->
+  <circle cx="280" cy="198" r="120" fill="#00d97a" opacity="0.08" />
+  <circle cx="1300" cy="120" r="100" fill="#00d97a" opacity="0.05" />
+  <circle cx="1300" cy="270" r="80" fill="#00d97a" opacity="0.04" />
+
+  <!-- Linhas acentuadas -->
+  <rect x="120" y="197" width="4" height="80" fill="url(#accentGradient)" />
+  <rect x="120" y="197" width="4" height="8" fill="#ffffff" />
+
+  <!-- Logo Nexus IA (esquerda) -->
+  <circle cx="120" cy="198" r="52" fill="url(#accentGradient)" />
+  <circle cx="120" cy="198" r="52" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.5" />
+  
+  <!-- Letra N -->
+  <path d="M100,185 L100,215 L120,185 L120,215 L140,185 L140,215" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Letra I -->
+  <rect x="132" cy="185" width="8" height="30" fill="#ffffff" />
+  
+  <!-- Letra A -->
+  <path d="M150,215 L150,185 L155,215 L155,215" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  <rect x="150" cy="200" width="8" height="4" fill="#ffffff" />
+
+  <!-- Título principal -->
+  <text x="200" y="190" font-family="Segoe UI Variable Display, Segoe UI, sans-serif" font-size="48" font-weight="900" fill="#ffffff" letter-spacing="2">
+    NEXUS IA
+  </text>
+  <text x="200" y="225" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="16" fill="#a1b1bb" letter-spacing="1">
+    DIAGNÓSTICO E OTIMIZAÇÃO DE HARDWARE PARA JOGOS
+  </text>
+  <text x="200" y="245" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="14" fill="#788b96">
+    Benchmarks • Sensores • Overclock • Overlay FPS • Drives Seriais • Iluminação RGB
+  </text>
+
+  <!-- Linha divisória decorativa -->
+  <line x1="200" y1="260" x2="400" y2="260" stroke="#00d97a" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Lista de funcionalidades (lado esquerdo) -->
+  <text x="200" y="285" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="13" fill="#e7f0f4" font-weight="600">
+    ◦ Sensores de temperatura, carga e consumo da CPU/GPU
+  </text>
+  <text x="200" y="302" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="13" fill="#e7f0f4" font-weight="600">
+    ◦ Benchmarks Cinebench, FurMark, ray tracing e disco
+  </text>
+  <text x="200" y="319" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="13" fill="#e7f0f4" font-weight="600">
+    ◔ Detecção de gargalo GPU × CPU com medição de FPS via ETW
+  </text>
+  <text x="200" y="336" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="13" fill="#e7f0f4" font-weight="600">
+    ◔ Otimização do Windows, inicialização e instalação de apps
+  </text>
+  <text x="200" y="353" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="13" fill="#e7f0f4" font-weight="600">
+    ◔ Iluminação RGB Corsair iCUE, OpenRGB e Razer Chroma
+  </text>
+
+  <!-- Badges (direita) -->
+  <rect x="1200" y="160" width="160" height="34" rx="17" fill="#16232d" stroke="#00d97a" stroke-width="1" />
+  <text x="1210" y="182" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="14" fill="#00d97a" font-weight="bold">
+    .NET 8 WPF
+  </text>
+
+  <rect x="1200" y="202" width="160" height="34" rx="17" fill="#16232d" stroke="#46cfc2" stroke-width="1" />
+  <text x="1210" y="224" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="14" fill="#46cfc2" font-weight="bold">
+    C# / WPF
+  </text>
+
+  <rect x="1200" y="244" width="160" height="34" rx="17" fill="#16232d" stroke="#2aa89d" stroke-width="1" />
+  <text x="1210" y="266" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="14" fill="#2aa89d" font-weight="bold">
+    v1.0.0
+  </text>
+
+  <!-- Linhas decorativas direita -->
+  <line x1="1350" y1="160" x2="1450" y2="160" stroke="#46cfc2" stroke-width="2" opacity="0.3" />
+  <line x1="1350" y1="180" x2="1450" y2="140" stroke="#00d97a" stroke-width="1" opacity="0.3" />
+  <line x1="1350" y1="220" x2="1450" y2="260" stroke="#00d97a" stroke-width="1" opacity="0.3" />
+  <line x1="1350" y1="280" x2="1450" y2="320" stroke="#46cfc2" stroke-width="1" opacity="0.3" />
+
+  <!-- Tag @usuario no canto inferior direito -->
+  <text x="1200" y="370" font-family="Segoe UI Variable Text, Segoe UI, sans-serif" font-size="12" fill="#788b96">
+    @seu_usuario #NexusIA #HardwareDiagnostic #DotNet
+  </text>
+</svg>

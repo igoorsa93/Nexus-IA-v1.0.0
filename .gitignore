@@ -1,0 +1,69 @@
+# ============================================================================
+# .gitignore — Nexus IA
+# ============================================================================
+
+# Build outputs
+bin/
+obj/
+publish/
+dist/
+NexusIA-dist/
+*.exe
+*.dll
+*.pdb
+*.xml
+*.config
+
+# Visual Studio / Visual Studio Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.csproj.user
+*.orig
+
+# Local / temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+~*
+
+# IDE specific
+.idea/
+*.iml
+*.nupkg
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python / package managers (if any)
+__pycache__/
+*.pyc
+.env
+node_modules/
+
+# ResetExplode legacy artifacts (keep repo clean)
+ResetExplode.exe
+ResetExplode.pdb
+ResetExplode-dist/
+
+# Documentation build artifacts
+docs/_build/
+site/
+
+# Test coverage
+coverage/
+*.lcov
+*.coverage
+
+# Temporary analysis files
+*.log.txt
+*.tmp.txt
+
+# End of file

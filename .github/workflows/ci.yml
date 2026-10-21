@@ -1,0 +1,43 @@
+name: CI - Nexus IA
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Instalar .NET 8 SDK
+        uses: actions/dotnet/setup@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restaurar pacotes NuGet
+        run: dotnet restore NexusIA-Repo/ResetExplode.csproj
+
+      - name: Compilar (Release)
+        run: dotnet build NexusIA-Repo/ResetExplode.csproj -c Release --no-restore
+
+      - name: Publicar (Single-file)
+        run: dotnet publish NexusIA-Repo/ResetExplode.csproj -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true -o ./publish
+
+      - name: Upload do executável
+        uses: actions/upload-artifact@v4
+        with:
+          name: NexusIA-exe
+          path: ./publish/NexusIA.exe
+          retention-days: 7
+
+      - name: Upload dos arquivos publicados
+        uses: actions/upload-artifact@v4
+        with:
+          name: NexusIA-build
+          path: ./publish/
+          retention-days: 7
