@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <rect x="32" y="32" width="256" height="256" rx="44" fill="#101821" stroke="#2A3D49" stroke-width="3"/>
+  <g transform="translate(48 48) scale(9.333333)" fill="none" stroke="#46CFC2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 4h8l4 4v8l-4 4H8l-4-4V8zM8.5 15.5v-7l7 7v-7"/>
+    <path d="M12 4V2M4 12H2M20 12h2M12 20v2"/>
+  </g>
+  <circle cx="160" cy="160" r="11" fill="#F0B45B"/>
+  <text x="340" y="153" fill="#E7F0F4" font-family="Segoe UI, Arial, sans-serif" font-size="92" font-weight="650" letter-spacing="1">NEXUS IA</text>
+  <text x="346" y="212" fill="#A1B1BB" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="400">Diagn&#xF3;stico e desempenho para PC</text>
+</svg>

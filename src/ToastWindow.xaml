@@ -1,0 +1,26 @@
+<Window x:Class="NexusIA.ToastWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NEXUS IA aviso" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Topmost="True" ShowInTaskbar="False" ShowActivated="False" ResizeMode="NoResize" Focusable="False"
+        SizeToContent="WidthAndHeight" UseLayoutRounding="True" TextOptions.TextFormattingMode="Display" Opacity="0">
+    <Border Background="{DynamicResource Panel}" BorderBrush="{DynamicResource LineStrong}" BorderThickness="1" CornerRadius="12" Padding="16,12" Width="340">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Width="34" Height="34" Background="{DynamicResource Accent}" CornerRadius="9" VerticalAlignment="Top" Margin="0,2,14,0">
+                <TextBlock x:Name="TIcon" Text="&#xE88E;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="17"
+                           Foreground="{DynamicResource Ink}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <StackPanel Grid.Column="1">
+                <TextBlock x:Name="TTitle" Foreground="{DynamicResource Fg}" FontFamily="Segoe UI Variable Text, Segoe UI" FontSize="13.5"
+                           FontWeight="SemiBold" TextWrapping="Wrap"/>
+                <TextBlock x:Name="TText" Foreground="{DynamicResource Muted}" FontFamily="Segoe UI Variable Text, Segoe UI" FontSize="12"
+                           TextWrapping="Wrap" Margin="0,3,0,0"/>
+                <TextBlock Text="NEXUS IA" Foreground="{DynamicResource Faint}" FontSize="9.5" FontWeight="SemiBold" Margin="0,6,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
